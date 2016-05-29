@@ -3,7 +3,6 @@ mariadb:
     env_file: .env
     volumes:
         - "./mariadb:/var/lib/mysql"
-        - "./logs/mariadb:/var/log/mariadb"
     expose:
         - "3306"
     restart: always
